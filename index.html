@@ -338,8 +338,8 @@ const past = document.getElementById("past-shows");
 
 shows.forEach(show => {
 
-  const showDate = const [year, month, day] = show.date.split("-");
-  const showDate = new Date(year, month - 1, day);
+const [year, month, day] = show.date.split("-");
+const showDate = new Date(year, month - 1, day);
 
   const card = document.createElement("div");
   card.className = "show";
